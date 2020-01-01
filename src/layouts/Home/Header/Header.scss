@@ -1,0 +1,75 @@
+.Header {
+    height: 50px;
+    background-color: var(--white-four);
+
+    display: flex;
+
+    .logo {
+        width: 154px;
+        height: 30px;
+        object-fit: contain;
+
+        margin-left: 12px;
+        margin-top: 12px;
+        margin-bottom: 11px;
+    }
+
+    .dp {
+        width: 35px;
+        height: 35px;
+        object-fit: contain;
+
+        margin-top: 8px;
+        margin-bottom: 7px;
+        margin-right: 5px;
+    }
+
+    .user-name {
+        display: none;
+        height: 17px;
+        font-family: Lato;
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--black-two);
+
+        margin-top: 17px;
+        margin-right: 5px;
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        .user-name {
+            display: block;
+        }
+    }
+
+    .caret {
+        margin-top: 17px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        // background-color: var(--white-three);
+    }
+
+    .dropdown-content {
+        position: absolute;
+        background-color: var(--white-three);
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px;
+        z-index: 1;
+
+        .item {
+            font-family: Lato;
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--black);
+        }
+    }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        .dropdown-content {
+            min-width: 120px;
+        }
+    }
+}
